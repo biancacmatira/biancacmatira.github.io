@@ -22,18 +22,6 @@ body {
     width: 100%; 
     transition: top 0.5s; 
 
-    .displayNav {
-        top: 0px;
-        transition: 0.3s;
-        opacity: 1;
-    }
-
-    .flexboxCenter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     #home {
         img {
             width: 10%;
@@ -50,7 +38,6 @@ body {
         position: relative;
         margin: auto;
         line-height: 25px;
-        // padding: 2%;
     }
 
     .link:hover, .link:active {
@@ -84,7 +71,17 @@ body {
     }
 }
 
+.displayNav {
+        top: 0px;
+        transition: 0.3s;
+        opacity: 1;
+    }
 
+    .flexboxCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 .home{
     width: 100%;
@@ -155,6 +152,31 @@ body {
 /* ----------- SMARTPHONES ----------- */
 @media only screen 
 and (max-width : 415px) {
+    #navbar {
+        visibility: hidden;
+        // width: auto;
+        // flex-direction: column;
+        // justify-content: center;
+        // position: fixed;
+        // height: 150px;
+
+        // #home {
+        //     margin: auto 0;
+        //     left: 9%;
+            
+        //     img {
+        //         width: 7%;
+        //         margin: 0 auto;
+        //     }
+        // }
+        
+        // .link {
+        //     margin: auto 0;
+        //     justify-content: center;
+        //     left: 9%;
+        // }
+    }
+
     .home {
         width: 100%;
         grid-template-columns: 1fr;
