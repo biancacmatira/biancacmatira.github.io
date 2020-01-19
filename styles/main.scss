@@ -1,0 +1,188 @@
+@import './colors';
+
+body {
+    margin: 0;
+    background-image: url("../images/mainbg.png");
+    background-position: center;
+    background-repeat: repeat;
+    height: 1500px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    background-color: $nav-light;
+    position: fixed; 
+    // top: -60px; 
+    height: 60px;
+    width: 100%; 
+    transition: top 0.5s; 
+
+    .displayNav {
+        top: 0px;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .flexboxCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home {
+        img {
+            width: 10%;
+            margin: 3% auto;
+        }
+    }
+
+    /* Style the navbar links */
+    .link {
+        color: $text-main;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 0;
+        position: relative;
+        margin: auto;
+        line-height: 25px;
+        // padding: 2%;
+    }
+
+    .link:hover, .link:active {
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .link:after, .link:before {
+        backface-visibility: hidden;
+        border: 1px solid $nav-light;
+        bottom: 0px;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        transition: all 280ms ease-in-out;
+        width: 0;
+    }
+
+    .link:hover:after, .link:hover:before {
+        backface-visibility: hidden;
+        border-color: $text-main;
+        transition: width 350ms ease-in-out;
+        width: 80%;
+    }
+
+    .link:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 80%;
+    }
+}
+
+
+
+.home{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "leftCol rightCol";
+    
+
+    .left {
+        grid-area: leftCol;
+        height: 650px;
+        background-color: $bg-light;
+
+        #logo {
+            width: 35%;
+            position: relative;
+            top: 25%;
+            left: 35%;
+        }
+    }
+
+    .right {
+        grid-area: rightCol;
+        height: 650px;
+
+        #hello{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 900;
+            font-size: 7em;
+            color: $text-main;
+            position : relative;
+            top: 28%;
+            left: 25%;
+            color: rgb(56, 59, 61);
+            animation-name: enterhello;
+            animation-duration: 2s;
+        }
+
+        // #afterhello {
+        //     font-family: 'Raleway', sans-serif;
+        //     font-weight: 500;
+        //     font-size: 105px;
+        //     animation: blink 1s linear infinite;
+        //     animation-delay: 2s;
+        //     visibility: hidden;
+        //     position : fixed;
+        //     top: 28%;
+        //     left: 75%;
+        // }
+        
+        @keyframes enterhello {
+            0% { transform: translateX(-30%); opacity : 0 }
+            20% { transform: translateX(-25%); opacity : 0 }
+            100% { transform: translateX(0%);; opacity: 1}
+        }
+        
+        // @keyframes blink{
+        //     0%{opacity: 0; visibility: visible;}
+        //     50%{opacity: 0.8; visibility: visible;}
+        //     100%{opacity: 0; visibility: visible;}
+        // }
+    }
+}
+
+
+
+/* ----------- SMARTPHONES ----------- */
+@media only screen 
+and (max-width : 415px) {
+    .home {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "leftCol" "rightCol";
+
+        .left {
+            height: 200px;
+
+            #logo {
+                width: 20%;
+                top: 20%;
+                left: 40%;
+            }
+        }
+
+        .right {
+            height: 200px;
+            
+            #hello {
+                font-size: 5em;
+                margin: 0 auto;
+            }
+
+            @keyframes enterhello {
+                0% { transform: translateY(-50%); opacity : 0 }
+                20% { transform: translateY(-40%); opacity : 0 }
+                100% { transform: translateX(0%);; opacity: 1}
+            }
+        }
+    }
+}
