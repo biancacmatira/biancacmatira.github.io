@@ -23,7 +23,7 @@ body {
     transition: all ease-out 0.5s;
 	-webkit-transition: all ease-out 0.5s;
 
-    #home {
+    #link1 {
         img {
             width: 10%;
             margin: 3% auto;
@@ -31,8 +31,8 @@ body {
     }
 
     /* Style the navbar links */
-    .link {
-        color: $text-main;
+    .links {
+        color: $text2;
         font-weight: 500;
         text-decoration: none;
         letter-spacing: 0;
@@ -41,12 +41,12 @@ body {
         line-height: 25px;
     }
 
-    .link:hover, .link:active {
+    .links:hover, .links:active {
         letter-spacing: 5px;
         font-weight: 700;
     }
 
-    .link:after, .link:before {
+    .links:after, .links:before {
         backface-visibility: hidden;
         border: 1px solid $nav-light;
         bottom: 0px;
@@ -58,33 +58,21 @@ body {
         width: 0;
     }
 
-    .link:hover:after, .link:hover:before {
+    .links:hover:after, .links:hover:before {
         backface-visibility: hidden;
-        border-color: $text-main;
+        border-color: $text2;
         transition: width 350ms ease-in-out;
         width: 80%;
     }
 
-    .link:hover:before {
+    .links:hover:before {
         bottom: auto;
         top: 0;
         width: 80%;
     }
 }
 
-.displayNav {
-        top: 0px;
-        transition: 0.3s;
-        opacity: 1;
-    }
-
-    .flexboxCenter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-.home {
+#mhome {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -112,7 +100,7 @@ body {
             font-family: 'Raleway', sans-serif;
             font-weight: 900;
             font-size: 7em;
-            color: $text-main;
+            color: $text1;
             position : relative;
             top: 28%;
             left: 25%;
@@ -147,18 +135,8 @@ body {
     }
 }
 
-.space {
-    height: 60px;
-    width: 100%;
-}
-
-section {
-    width: 100%;
-    height: 650px;
-}
-
 .sections {
-    height: 590px;
+    height: 650px;
     bottom: 0;
 
     h1{
@@ -166,6 +144,64 @@ section {
     }
 }
 
+#mabout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "leftCol rightCol";
+    
+
+    .left {
+        grid-area: leftCol;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        h4 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 2.5em;
+            text-align: right;
+            margin: 0;
+            color: $text1-light;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 900;
+            font-size: 6em;
+            text-align: right;
+            margin: -5% 0 0 0;
+            color: $text2;
+        }
+
+        p {
+            font-family: 'Vollkorn', serif;
+            font-size: 1.25em;
+            text-align: right;
+            margin: 5% 0 0 20%;
+            color: $text1;
+        }
+    }
+
+    .right {
+        grid-area: rightCol;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 55%;
+            border-radius: 50%;
+            opacity: 90%;
+        }
+    }
+}
 
 /* ----------- SMARTPHONES ----------- */
 @media only screen 
@@ -188,7 +224,7 @@ and (max-width : 415px) {
         //     }
         // }
         
-        // .link {
+        // .links {
         //     margin: auto 0;
         //     justify-content: center;
         //     left: 9%;
@@ -225,4 +261,5 @@ and (max-width : 415px) {
             }
         }
     }
+
 }
