@@ -145,7 +145,9 @@ body {
         font-size: 4em;
         font-weight: 900;
         color: $text1-light;
-        margin: 0 42%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
         position: absolute;
         bottom: 0;
     }
@@ -212,9 +214,15 @@ body {
 
 #sworks {
     height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+
 }
 
 #scontact {
+    margin: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "leftCol rightCol";
@@ -223,14 +231,24 @@ body {
         grid-area: leftCol;
         height: 500px;
 
+        p {
+            width: 60%;
+            font-family: 'Vollkorn', serif;
+            font-size: 1.15em;
+            text-align: right;
+            margin: 10% 10% auto auto;
+            color: $text1-light;
+        }
+
          .socials {
-            text-align: center;
-            margin-top: 5%;
+            width: 60%;
+            text-align: right;
+            margin: 10% 10% auto auto;
             opacity: 60%;
 
             img {
-                width: 5%;
-                padding: 1.5%;
+                width: 10%;
+                padding: 2%;
             }
         }
     }
@@ -238,8 +256,55 @@ body {
     .right {
         grid-area: rightCol;
         height: 500px;
-    }
 
+        table {
+            font-family: 'Raleway', sans-serif;
+            left: 0;
+            margin: 5% auto auto 0;
+            width: 75%;
+
+            .label {
+                font-weight: 700;
+                font-family: 1em;
+                color: $text1-light;;
+                width: 25%;
+                padding: 0;
+                vertical-align: top;
+                height: 25%;
+            }
+
+            .tbox {
+                font-weight: 500;
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text], input[type=email], textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */ 
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 5px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: $bg;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: $text2;
+            }
+        }
+    }
 }
 
 
@@ -304,5 +369,4 @@ and (max-width : 415px) {
             }
         }
     }
-
 }

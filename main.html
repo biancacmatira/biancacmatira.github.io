@@ -49,7 +49,7 @@
         <h1>works</h1>
     </div>
     <div class="sections" id="sworks">
-        <h2>content</h2>
+       <h2>content</h2>
     </div>
     <div class="label" id="lcontact">
         <!-- <br><br><br><br><br> -->
@@ -57,6 +57,10 @@
     </div>
     <div class="sections" id="scontact">
         <div class="left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius animi unde est. Molestiae sint ducimus laborum, dolorum
+                cumque reiciendis corrupti dolor quibusdam consectetur placeat, facilis quidem perspiciatis vero sapiente
+                voluptatum.
+            </p>
             <div class="socials">
                 <a href="#facebook"><img src="./images/sicon-fb.png"></a><a href="#instagram"><img
                         src="./images/sicon-ig.png"></a><a href="#youtube"><img src="./images/sicon-yt.png"></a><a
@@ -64,8 +68,39 @@
             </div>
         </div>
         <div class="right">
-            <form>
-                
+            <form id="contactform" action="action_page.php">
+                <table>
+                    <tr>
+                        <td class="label">
+                            <p>Name : </p>
+                        </td>
+                        <td class="tbox">
+                            <input type="text" id="fname" name="firstname" placeholder="Your complete name..">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <p>Email : </p>
+                        </td>
+                        <td class="tbox">
+                            <input type="email" id="lname" name="lastname" placeholder="Your email address..">
+                        </td>
+                    </tr>                       
+                    <tr>
+                        <td class="label">
+                            Message : 
+                        </td>
+                        <td class="tbox">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
             </form>
         </div>
     </div>

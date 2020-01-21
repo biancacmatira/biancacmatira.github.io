@@ -172,7 +172,9 @@ body {
   font-size: 4em;
   font-weight: 900;
   color: rgba(51, 51, 51, 0.8);
-  margin: 0 42%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
   position: absolute;
   bottom: 0;
 }
@@ -261,9 +263,19 @@ body {
 
 #sworks {
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 
 #scontact {
+  margin: 2%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -278,15 +290,25 @@ body {
   height: 500px;
 }
 
+#scontact .left p {
+  width: 60%;
+  font-family: 'Vollkorn', serif;
+  font-size: 1.15em;
+  text-align: right;
+  margin: 10% 10% auto auto;
+  color: rgba(51, 51, 51, 0.8);
+}
+
 #scontact .left .socials {
-  text-align: center;
-  margin-top: 5%;
+  width: 60%;
+  text-align: right;
+  margin: 10% 10% auto auto;
   opacity: 60%;
 }
 
 #scontact .left .socials img {
-  width: 5%;
-  padding: 1.5%;
+  width: 10%;
+  padding: 2%;
 }
 
 #scontact .right {
@@ -294,6 +316,60 @@ body {
   -ms-grid-column: 2;
   grid-area: rightCol;
   height: 500px;
+}
+
+#scontact .right table {
+  font-family: 'Raleway', sans-serif;
+  left: 0;
+  margin: 5% auto auto 0;
+  width: 75%;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+}
+
+#scontact .right table .label {
+  font-weight: 700;
+  font-family: 1em;
+  color: rgba(51, 51, 51, 0.8);
+  width: 25%;
+  padding: 0;
+  vertical-align: top;
+  height: 25%;
+}
+
+#scontact .right table .tbox {
+  font-weight: 500;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#scontact .right table input[type=text], #scontact .right table input[type=email], #scontact .right table textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 5px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  resize: vertical;
+}
+
+#scontact .right table input[type=submit] {
+  background-color: #709daa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#scontact .right table input[type=submit]:hover {
+  background-color: #32728a;
 }
 
 /* ----------- SMARTPHONES ----------- */
