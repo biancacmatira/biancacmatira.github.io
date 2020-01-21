@@ -229,7 +229,7 @@ body {
 
     .left {
         grid-area: leftCol;
-        height: 500px;
+        height: 400px;
 
         p {
             width: 60%;
@@ -255,7 +255,7 @@ body {
 
     .right {
         grid-area: rightCol;
-        height: 500px;
+        height: 400px;
 
         table {
             font-family: 'Raleway', sans-serif;
@@ -304,6 +304,20 @@ body {
                 background-color: $text2;
             }
         }
+    }
+}
+
+#footer {
+    z-index: 998;
+    background-color: $bg-light;
+    height: 65px;
+    width: 100%; 
+
+    p {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.75em;
+        color: $text1-light;
     }
 }
 
