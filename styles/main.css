@@ -6,10 +6,10 @@ body {
 }
 
 #back2top {
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
   position: fixed;
-  width: 5%;
+  width: 4%;
   z-index: 995;
 }
 
@@ -300,7 +300,7 @@ body {
   border-radius: 2%;
   margin: 2%;
   width: 25%;
-  height: 200px;
+  height: 220px;
   float: left;
   overflow: hidden;
   position: relative;
@@ -335,10 +335,15 @@ body {
 }
 
 #sworks .item img {
+  height: 110%;
   display: block;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #sworks .item:hover img {
