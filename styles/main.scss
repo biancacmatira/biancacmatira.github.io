@@ -7,6 +7,24 @@ body {
     background-repeat: repeat;
 }
 
+#back2top {
+    bottom: 5%;
+    right: 5%;
+    position: fixed;
+    width: 5%;
+    z-index: 995;
+
+    img {
+        width: 100%;
+        opacity: 45%;
+    }
+
+    img:hover {
+        opacity: 70%;
+    }
+}
+
+
 #navbar {
     z-index: 999;
     display: flex;
@@ -218,9 +236,12 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin: 3% 5%;
+    padding: 2% 5%;
+    margin-top: 3%;
+    background-color: $bg-light;
 
     .item {
+        border-radius: 2%;
         margin: 2%;
         width: 25%;
         height: 200px;
@@ -229,6 +250,7 @@ body {
         position: relative;
         text-align: center;
         cursor: default;
+        box-shadow: 5px 5px $bg-light;
     }
 
     .item .overlay {

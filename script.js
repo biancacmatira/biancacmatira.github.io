@@ -9,3 +9,11 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+// window.onscroll = function () {
+//     if (pageOffset >= 1000) {
+//         document.getElementById('back2top').style.visibility = "visible"
+//     } else {
+//         document.getElementById('back2top').style.visibility = "hidden";
+//     }
+// };

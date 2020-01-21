@@ -5,6 +5,23 @@ body {
   background-repeat: repeat;
 }
 
+#back2top {
+  bottom: 5%;
+  right: 5%;
+  position: fixed;
+  width: 5%;
+  z-index: 995;
+}
+
+#back2top img {
+  width: 100%;
+  opacity: 45%;
+}
+
+#back2top img:hover {
+  opacity: 70%;
+}
+
 #navbar {
   z-index: 999;
   display: -webkit-box;
@@ -274,10 +291,13 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 3% 5%;
+  padding: 2% 5%;
+  margin-top: 3%;
+  background-color: rgba(112, 157, 170, 0.1);
 }
 
 #sworks .item {
+  border-radius: 2%;
   margin: 2%;
   width: 25%;
   height: 200px;
@@ -286,6 +306,8 @@ body {
   position: relative;
   text-align: center;
   cursor: default;
+  -webkit-box-shadow: 5px 5px rgba(112, 157, 170, 0.1);
+          box-shadow: 5px 5px rgba(112, 157, 170, 0.1);
 }
 
 #sworks .item .overlay {
