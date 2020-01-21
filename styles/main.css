@@ -297,7 +297,7 @@ body {
 }
 
 #sworks .item {
-  border-radius: 2%;
+  border-radius: 3%;
   margin: 2%;
   width: 25%;
   height: 220px;
@@ -402,6 +402,29 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
+#mworks {
+  background-color: rgba(112, 157, 170, 0.1);
+  text-align: center;
+  padding: 0 0 4% 0;
+}
+
+#mworks a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: #709daa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#mworks a:hover {
+  background-color: #32728a;
+}
+
 #scontact {
   margin: 2%;
   display: -ms-grid;
@@ -431,12 +454,16 @@ body {
   width: 60%;
   text-align: right;
   margin: 10% 10% auto auto;
-  opacity: 60%;
 }
 
 #scontact .left .socials img {
   width: 10%;
   padding: 2%;
+  opacity: 55%;
+}
+
+#scontact .left .socials img:hover {
+  opacity: 75%;
 }
 
 #scontact .right {

@@ -241,7 +241,7 @@ body {
     background-color: $bg-light;
 
     .item {
-        border-radius: 2%;
+        border-radius: 3%;
         margin: 2%;
         width: 25%;
         height: 220px;
@@ -343,6 +343,29 @@ body {
     }
 }
 
+#mworks {
+    background-color: $bg-light;
+    text-align: center;
+    padding: 0 0 4% 0;
+
+    a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+        background-color: $bg;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    a:hover {
+        background-color: $text2;
+    }
+}
+
 #scontact {
     margin: 2%;
     display: grid;
@@ -362,15 +385,19 @@ body {
             color: $text1-light;
         }
 
-         .socials {
+        .socials {
             width: 60%;
             text-align: right;
             margin: 10% 10% auto auto;
-            opacity: 60%;
 
             img {
                 width: 10%;
                 padding: 2%;
+                opacity: 55%;
+            }
+
+            img:hover {
+                opacity: 75%;
             }
         }
     }
