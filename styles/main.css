@@ -11,6 +11,7 @@ body {
   position: fixed;
   width: 4%;
   z-index: 995;
+  visibility: hidden;
 }
 
 #back2top img {

@@ -10,21 +10,18 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-var img = document.getElementsByClassName('item').firstChild;
-img.onload = function() {
-    if(img.height > img.width) {
+var img = document.getElementsByClassName('item');
+img.onload = function () {
+    if (img.height > img.width) {
         img.height = '100%';
         img.width = 'auto';
-    // } else if (img.height < img.width){
-    //     img.height = 'auto';
-    //     img.width = '100%';
     }
 };
 
-// window.onscroll = function () {
-//     if (pageOffset >= 1000) {
-//         document.getElementById('back2top').style.visibility = "visible"
-//     } else {
-//         document.getElementById('back2top').style.visibility = "hidden";
-//     }
-// };
+window.onscroll = function () {
+    if (pageYOffset >= 300) {
+        document.getElementById('back2top').style.visibility = "visible";
+    } else {
+        document.getElementById('back2top').style.visibility = "hidden";
+    }
+};
