@@ -79,7 +79,7 @@ body {
   width: 80%;
 }
 
-#mhome {
+#shome {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -88,7 +88,7 @@ body {
       grid-template-areas: "leftCol rightCol";
 }
 
-#mhome .left {
+#shome .left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: leftCol;
@@ -96,21 +96,21 @@ body {
   background-color: rgba(112, 157, 170, 0.1);
 }
 
-#mhome .left #logo {
+#shome .left #logo {
   width: 35%;
   position: relative;
   top: 25%;
   left: 35%;
 }
 
-#mhome .right {
+#shome .right {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: rightCol;
   height: 650px;
 }
 
-#mhome .right #hello {
+#shome .right #hello {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 7em;
@@ -161,16 +161,23 @@ body {
   }
 }
 
-.sections {
-  height: 650px;
+.label {
+  height: 150px;
+  margin-bottom: -25px;
+  position: relative;
+}
+
+.label h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+  color: rgba(51, 51, 51, 0.8);
+  margin: 0 42%;
+  position: absolute;
   bottom: 0;
 }
 
-.sections h1 {
-  margin: 0 auto;
-}
-
-#mabout {
+#sabout {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -179,11 +186,11 @@ body {
       grid-template-areas: "leftCol rightCol";
 }
 
-#mabout .left {
+#sabout .left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: leftCol;
-  height: 650px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,7 +206,7 @@ body {
           align-items: center;
 }
 
-#mabout .left h4 {
+#sabout .left h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -209,7 +216,7 @@ body {
   color: rgba(51, 51, 51, 0.8);
 }
 
-#mabout .left h2 {
+#sabout .left h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 6em;
@@ -218,7 +225,7 @@ body {
   color: #32728a;
 }
 
-#mabout .left p {
+#sabout .left p {
   font-family: 'Vollkorn', serif;
   font-size: 1.25em;
   text-align: right;
@@ -226,14 +233,18 @@ body {
   color: #333333;
 }
 
-#mabout .right {
+#sabout .right {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: rightCol;
-  height: 650px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -242,10 +253,47 @@ body {
           align-items: center;
 }
 
-#mabout .right img {
+#sabout .right #aboutpic {
   width: 55%;
   border-radius: 50%;
   opacity: 90%;
+}
+
+#sworks {
+  height: 500px;
+}
+
+#scontact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "leftCol rightCol";
+}
+
+#scontact .left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: leftCol;
+  height: 500px;
+}
+
+#scontact .left .socials {
+  text-align: center;
+  margin-top: 5%;
+  opacity: 60%;
+}
+
+#scontact .left .socials img {
+  width: 5%;
+  padding: 1.5%;
+}
+
+#scontact .right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: rightCol;
+  height: 500px;
 }
 
 /* ----------- SMARTPHONES ----------- */
@@ -253,24 +301,30 @@ body {
   #navbar {
     visibility: hidden;
   }
-  .home {
+  .shome {
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: "leftCol" "rightCol";
   }
-  .home .left {
+  .shome .left {
     height: 200px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: leftCol;
   }
-  .home .left #logo {
+  .shome .left #logo {
     width: 20%;
     top: 20%;
     left: 40%;
   }
-  .home .right {
+  .shome .right {
     height: 200px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: rightCol;
   }
-  .home .right #hello {
+  .shome .right #hello {
     font-size: 5em;
     margin: 0 auto;
   }

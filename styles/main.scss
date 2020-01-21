@@ -72,7 +72,7 @@ body {
     }
 }
 
-#mhome {
+#shome {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,25 +135,31 @@ body {
     }
 }
 
-.sections {
-    height: 650px;
-    bottom: 0;
-
-    h1{
-        margin: 0 auto;
+.label {
+    height: 150px;
+    margin-bottom: -25px;
+    position: relative;
+    
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 4em;
+        font-weight: 900;
+        color: $text1-light;
+        margin: 0 42%;
+        position: absolute;
+        bottom: 0;
     }
 }
 
-#mabout {
+#sabout {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "leftCol rightCol";
-    
 
     .left {
         grid-area: leftCol;
-        height: 650px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -190,18 +196,52 @@ body {
 
     .right {
         grid-area: rightCol;
-        height: 650px;
+        height: 500px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        img {
+        #aboutpic {
             width: 55%;
             border-radius: 50%;
             opacity: 90%;
         }
     }
 }
+
+#sworks {
+    height: 500px;
+}
+
+#scontact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "leftCol rightCol";
+
+    .left {
+        grid-area: leftCol;
+        height: 500px;
+
+         .socials {
+            text-align: center;
+            margin-top: 5%;
+            opacity: 60%;
+
+            img {
+                width: 5%;
+                padding: 1.5%;
+            }
+        }
+    }
+
+    .right {
+        grid-area: rightCol;
+        height: 500px;
+    }
+
+}
+
 
 /* ----------- SMARTPHONES ----------- */
 @media only screen 
@@ -231,13 +271,15 @@ and (max-width : 415px) {
         // }
     }
 
-    .home {
+    .shome {
         width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-areas: "leftCol" "rightCol";
+        grid-template-rows: 1fr;
+        grid-template-areas:    "leftCol"
+                                "rightCol";
 
         .left {
             height: 200px;
+            grid-area: leftCol;
 
             #logo {
                 width: 20%;
@@ -248,7 +290,8 @@ and (max-width : 415px) {
 
         .right {
             height: 200px;
-            
+            grid-area: rightCol;
+
             #hello {
                 font-size: 5em;
                 margin: 0 auto;
