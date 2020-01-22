@@ -99,6 +99,79 @@ body {
   width: 80%;
 }
 
+#wnavbar {
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  background-color: rgba(112, 157, 170, 0.1);
+  position: static;
+  height: 60px;
+  width: 100%;
+  transition: all ease-out 0.5s;
+  -webkit-transition: all ease-out 0.5s;
+  /* Style the navbar links */
+}
+
+#wnavbar #link1 img {
+  width: 10%;
+  margin: 3% auto;
+}
+
+#wnavbar .links {
+  color: #32728a;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0;
+  position: relative;
+  margin: auto;
+  line-height: 25px;
+}
+
+#wnavbar .links:hover, #wnavbar .links:active {
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+#wnavbar .links:after, #wnavbar .links:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(241, 240, 239, 0.5);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+#wnavbar .links:hover:after, #wnavbar .links:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #32728a;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 80%;
+}
+
+#wnavbar .links:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 80%;
+}
+
 #shome {
   width: 100%;
   display: -ms-grid;

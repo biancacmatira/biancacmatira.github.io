@@ -92,6 +92,70 @@ body {
     }
 }
 
+#wnavbar {
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    background-color: $bg-light;
+    position: static;  
+    height: 60px;
+    width: 100%; 
+    transition: all ease-out 0.5s;
+	-webkit-transition: all ease-out 0.5s;
+
+    #link1 {
+        img {
+            width: 10%;
+            margin: 3% auto;
+        }
+    }
+
+    /* Style the navbar links */
+    .links {
+        color: $text2;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 0;
+        position: relative;
+        margin: auto;
+        line-height: 25px;
+    }
+
+    .links:hover, .links:active {
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .links:after, .links:before {
+        backface-visibility: hidden;
+        border: 1px solid $nav-light;
+        bottom: 0px;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        transition: all 280ms ease-in-out;
+        width: 0;
+    }
+
+    .links:hover:after, .links:hover:before {
+        backface-visibility: hidden;
+        border-color: $text2;
+        transition: width 350ms ease-in-out;
+        width: 80%;
+    }
+
+    .links:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 80%;
+    }
+}
+
 #shome {
     width: 100%;
     display: grid;
