@@ -1,11 +1,8 @@
 @import './colors';
 
-html {
-
-    width: 100%;
-}
-
 body {
+    overflow-x: hidden;
+    max-width: 100%;
     margin: 0;
     background-image: url("../images/mainbg.png");
     background-position: center;
@@ -465,6 +462,16 @@ body {
 /* ----------- SMARTPHONES ----------- */
 @media only screen 
 and (max-width : 414px) {
+
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    #back2top {
+        width: 10%;
+    }
+    
     #navbar {
         visibility: hidden;
         // width: auto;
@@ -500,9 +507,9 @@ and (max-width : 414px) {
             height: 250px;
 
             #logo {
-                width: 20%;
+                width: 25%;
                 top: 20%;
-                left: 40%;
+                text-align: center;
             }
         }
 
@@ -511,8 +518,10 @@ and (max-width : 414px) {
             height: 250px;
 
             #hello {
+                top: 15%;
+                text-align: center;
+                width: 50%;
                 font-size: 4.5em;
-                margin: 0 auto;
             }
 
             @keyframes enterhello {
@@ -646,7 +655,7 @@ and (max-width : 414px) {
     }
 
     #footer {
-        
+
         p {
             font-size: 0.55em;
         }
