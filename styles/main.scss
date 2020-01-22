@@ -802,4 +802,42 @@ and (max-width : 414px) {
         }
     }
 
+    .icontent {
+        width: 100%;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .imain {
+            padding: 2%;
+            text-align: center;
+
+            .imain_inner {
+
+                img {
+                    width: 80%; 
+                }
+            }
+        }
+
+        .iside {
+            padding: 2% 10%;
+            text-align: center;
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: -2%;
+            }
+
+            h2 {
+                font-size: 1em;
+                margin-bottom: -2%;
+            }
+
+            p {
+                font-family: 'Vollkorn', serif;
+                font-size: 1em;
+            }
+        }
+    }
 }
