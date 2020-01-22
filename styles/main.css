@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
   margin: 0;
   background-image: url("../images/mainbg.png");
@@ -501,13 +505,14 @@ body {
 }
 
 #scontact .right table input[type=text], #scontact .right table input[type=email], #scontact .right table textarea {
+  font-family: 'Raleway', sans-serif;
   width: 100%;
   /* Full width */
-  padding: 12px;
+  padding: 5%;
   /* Some padding */
   border: 1px solid #ccc;
   /* Gray border */
-  border-radius: 5px;
+  border-radius: 3%;
   /* Rounded borders */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -521,9 +526,9 @@ body {
   font-size: 0.75em;
   background-color: #709daa;
   color: white;
-  padding: 12px 20px;
+  padding: 5% 8%;
   border: none;
-  border-radius: 4px;
+  border-radius: 10%;
   cursor: pointer;
 }
 
@@ -546,35 +551,35 @@ body {
 }
 
 /* ----------- SMARTPHONES ----------- */
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 414px) {
   #navbar {
     visibility: hidden;
   }
-  .shome {
+  #shome {
     width: 100%;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "leftCol" "rightCol";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .shome .left {
-    height: 200px;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: leftCol;
+  #shome .left {
+    width: 100%;
+    height: 250px;
   }
-  .shome .left #logo {
+  #shome .left #logo {
     width: 20%;
     top: 20%;
     left: 40%;
   }
-  .shome .right {
-    height: 200px;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: rightCol;
+  #shome .right {
+    width: 100%;
+    height: 250px;
   }
-  .shome .right #hello {
-    font-size: 5em;
+  #shome .right #hello {
+    font-size: 4.5em;
     margin: 0 auto;
   }
   @-webkit-keyframes enterhello {
@@ -610,6 +615,124 @@ body {
               transform: translateX(0%);
       opacity: 1;
     }
+  }
+  .label {
+    height: 75px;
+    margin: 0 auto;
+  }
+  .label h1 {
+    font-size: 2.75em;
+  }
+  #sabout {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #sabout .left {
+    margin: 0;
+    height: 250px;
+    text-align: center;
+  }
+  #sabout .left h4 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #sabout .left h2 {
+    font-size: 4em;
+    text-align: center;
+    margin: -3% 0 0 0;
+  }
+  #sabout .left p {
+    font-size: 0.85em;
+    text-align: center;
+    margin: 3% 10%;
+  }
+  #sabout .right {
+    height: 250px;
+  }
+  #sabout .right #aboutpic {
+    width: 45%;
+  }
+  #sworks {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 2% 5%;
+    margin-top: 3%;
+  }
+  #sworks .item {
+    border-radius: 3%;
+    margin: 5%;
+    width: 40%;
+    height: 150px;
+  }
+  #mworks {
+    background-color: rgba(112, 157, 170, 0.1);
+    text-align: center;
+    padding: 2% 0 7% 0;
+  }
+  #mworks a {
+    font-size: 0.70em;
+  }
+  #scontact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #scontact .left {
+    height: auto;
+  }
+  #scontact .left p {
+    font-size: 0.85em;
+    text-align: center;
+    margin: 4% auto;
+  }
+  #scontact .left .socials {
+    width: 60%;
+    text-align: center;
+    margin: 2% auto;
+  }
+  #scontact .right {
+    font-family: 'Raleway', sans-serif;
+    height: auto;
+  }
+  #scontact .right table {
+    margin: 4% auto;
+    width: 80%;
+  }
+  #scontact .right table .label {
+    font-size: 0.85em;
+    width: 25%;
+    height: 25%;
+  }
+  #scontact .right table .tbox {
+    font-weight: 500;
+    width: 75%;
+    margin: 0 auto;
+  }
+  #scontact .right table input[type=submit] {
+    font-size: 0.55em;
+  }
+  #footer p {
+    font-size: 0.55em;
   }
 }
 /*# sourceMappingURL=main.css.map */
