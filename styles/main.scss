@@ -347,11 +347,10 @@ body {
     .item h2 {
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
-        font-size: 5em;
+        font-size: 1em;
         text-transform: uppercase;
         text-align: center;
         position: relative;
-        font-size: 17px;
         background-color: transparent;
         color: #FFF;
         padding: 1em 0;
@@ -618,6 +617,29 @@ and (max-width : 414px) {
         // }
     }
 
+    #wnavbar {
+        visibility: visible;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        height: auto;
+
+        #home {
+            margin: 0 auto;
+            
+            img {
+                width: 7%;
+                margin: 0 auto;
+            }
+        }
+        
+        .links {
+            text-align: center;
+            padding: 2% 0;
+        }
+    }
+
     #shome {
         width: 100%;
         display: flex;
@@ -708,14 +730,12 @@ and (max-width : 414px) {
         padding: 2% 5%;
         margin-top: 3%;
 
-    .item {
-        border-radius: 3%;
-        margin: 5%;
-        width: 40%;
-        height: 150px;
-
-    }
-
+        .item {
+            border-radius: 3%;
+            margin: 5%;
+            width: 75%;
+            height: 200px;
+        }
     }
 
     #mworks {

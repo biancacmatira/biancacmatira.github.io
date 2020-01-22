@@ -431,11 +431,10 @@ body {
 #sworks .item h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
-  font-size: 5em;
+  font-size: 1em;
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  font-size: 17px;
   background-color: transparent;
   color: #FFF;
   padding: 1em 0;
@@ -697,6 +696,30 @@ body {
   #navbar {
     visibility: hidden;
   }
+  #wnavbar {
+    visibility: visible;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
+    height: auto;
+  }
+  #wnavbar #home {
+    margin: 0 auto;
+  }
+  #wnavbar #home img {
+    width: 7%;
+    margin: 0 auto;
+  }
+  #wnavbar .links {
+    text-align: center;
+    padding: 2% 0;
+  }
   #shome {
     width: 100%;
     display: -webkit-box;
@@ -821,8 +844,8 @@ body {
   #sworks .item {
     border-radius: 3%;
     margin: 5%;
-    width: 40%;
-    height: 150px;
+    width: 75%;
+    height: 200px;
   }
   #mworks {
     background-color: rgba(112, 157, 170, 0.1);
