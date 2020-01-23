@@ -476,31 +476,28 @@ body {
                 margin: 0 auto;
             }
 
-            /* Style inputs with type="text", select elements and textareas */
             input[type=text], input[type=email], textarea {
                 font-family: 'Raleway', sans-serif;
                 width: 100%; /* Full width */
                 padding: 3%; /* Some padding */ 
                 border: 1px solid #ccc; /* Gray border */
-                border-radius: 3%; /* Rounded borders */
+                border-radius: 7px; /* Rounded borders */
                 box-sizing: border-box; /* Make sure that padding and width stays in place */
                 resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
             }
 
-            /* Style the submit button with a specific background color etc */
             input[type=submit] {
                 font-family: 'Raleway', sans-serif;
                 font-weight: 500;
-                font-size: 0.75em;
+                font-size: 0.8em;
                 background-color: $bg;
                 color: white;
-                padding: 5% 8%;
+                padding: 4% 7%;
                 border: none;
-                border-radius: 10%;
+                border-radius: 7px;
                 cursor: pointer;
             }
 
-            /* When moving the mouse over the submit button, add a darker green color */
             input[type=submit]:hover {
                 background-color: $text2;
             }
@@ -550,7 +547,7 @@ body {
 
     .iside {
         grid-area: side;
-        padding: 5% 20% 5% 5%;
+        padding: 5% 25% 5% 5%;
         background-color: $nav-light;
         position: relative;
         text-align: left;
@@ -835,7 +832,6 @@ and (max-width : 414px) {
             }
 
             p {
-                font-family: 'Vollkorn', serif;
                 font-size: 1em;
             }
         }

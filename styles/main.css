@@ -553,9 +553,6 @@ body {
   left: 0;
   margin: 5% auto auto 0;
   width: 75%;
-  /* Style inputs with type="text", select elements and textareas */
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
 }
 
 #scontact .right table .label {
@@ -583,7 +580,7 @@ body {
   /* Some padding */
   border: 1px solid #ccc;
   /* Gray border */
-  border-radius: 3%;
+  border-radius: 7px;
   /* Rounded borders */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -594,12 +591,12 @@ body {
 #scontact .right table input[type=submit] {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 0.75em;
+  font-size: 0.8em;
   background-color: #709daa;
   color: white;
-  padding: 5% 8%;
+  padding: 4% 7%;
   border: none;
-  border-radius: 10%;
+  border-radius: 7px;
   cursor: pointer;
 }
 
@@ -656,7 +653,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: side;
-  padding: 5% 20% 5% 5%;
+  padding: 5% 25% 5% 5%;
   background-color: rgba(241, 240, 239, 0.5);
   position: relative;
   text-align: left;
@@ -932,7 +929,6 @@ body {
     margin-bottom: -2%;
   }
   .icontent .iside p {
-    font-family: 'Vollkorn', serif;
     font-size: 1em;
   }
 }
