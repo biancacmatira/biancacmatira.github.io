@@ -828,21 +828,26 @@ and (max-width : 414px) {
         }
 
         .iside {
-            padding: 2% 10%;
+            padding: 1%;
             text-align: center;
+            height: 300px;
 
-            h1 {
-                font-size: 2em;
-                margin-bottom: -2%;
-            }
+            .iside_inner {
+                margin: 3% 10%;
 
-            h2 {
-                font-size: 1em;
-                margin-bottom: -2%;
-            }
+                h1 {
+                    font-size: 1.8em;
+                    margin: -1% 0 -2% 0;
+                }
 
-            p {
-                font-size: 1em;
+                h2 {
+                    font-size: 1em;
+                    margin-bottom: -2%;
+                }
+
+                p {
+                    font-size: 1em;
+                }
             }
         }
     }

@@ -927,18 +927,22 @@ body {
     width: 80%;
   }
   .icontent .iside {
-    padding: 2% 10%;
+    padding: 1%;
     text-align: center;
+    height: 300px;
   }
-  .icontent .iside h1 {
-    font-size: 2em;
-    margin-bottom: -2%;
+  .icontent .iside .iside_inner {
+    margin: 3% 10%;
   }
-  .icontent .iside h2 {
+  .icontent .iside .iside_inner h1 {
+    font-size: 1.8em;
+    margin: -1% 0 -2% 0;
+  }
+  .icontent .iside .iside_inner h2 {
     font-size: 1em;
     margin-bottom: -2%;
   }
-  .icontent .iside p {
+  .icontent .iside .iside_inner p {
     font-size: 1em;
   }
 }
