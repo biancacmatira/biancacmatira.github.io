@@ -534,11 +534,11 @@ body {
 #scontact .left .socials img {
   width: 10%;
   padding: 2%;
-  opacity: 55%;
+  opacity: 35%;
 }
 
 #scontact .left .socials img:hover {
-  opacity: 75%;
+  opacity: 80%;
 }
 
 #scontact .right {
