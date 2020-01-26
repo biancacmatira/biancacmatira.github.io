@@ -523,7 +523,7 @@ body {
     width: 100%;
     margin: 5% auto;
     display: grid;
-    grid-template-columns: 8fr 4fr;
+    grid-template-columns: 7.5fr 4fr;
     grid-template-areas: "main side";
 
     .imain {
@@ -547,33 +547,41 @@ body {
 
     .iside {
         grid-area: side;
-        padding: 5% 25% 5% 5%;
+        height: 517.5px;
+        padding: 2%;
         background-color: $nav-light;
-        position: relative;
         text-align: left;
-        height: 493px;
-        overflow-y: scroll;
+        
+        .iside_inner {
+            margin:5% 20% 5% 5%;
+            height: 90%;
+            overflow-y: auto;
 
-        h1 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 900;
-            font-size: 2.5em;
-            text-transform: uppercase;
-            color: $text1;
-            margin-bottom: -5%;
-        }
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                color: $text1;
+                margin: -2% 0 -5% 0;
 
-        h2 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 1.5em;
-            text-transform: uppercase;
-            color: $text1-light;
-        }
+                span {
+                    font-size: 0.8em;
+                }
+            }
 
-        p {
-            font-family: 'Vollkorn', serif;
-            font-size: 1em;
+            h2 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                color: $text1-light;
+            }
+
+            p {
+                font-family: 'Vollkorn', serif;
+                font-size: 1.1em;
+            }
         }
     }
 }

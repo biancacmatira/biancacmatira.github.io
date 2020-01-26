@@ -623,8 +623,8 @@ body {
   margin: 5% auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 8fr 4fr;
-      grid-template-columns: 8fr 4fr;
+  -ms-grid-columns: 7.5fr 4fr;
+      grid-template-columns: 7.5fr 4fr;
       grid-template-areas: "main side";
 }
 
@@ -653,24 +653,32 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: side;
-  padding: 5% 25% 5% 5%;
+  height: 517.5px;
+  padding: 2%;
   background-color: rgba(241, 240, 239, 0.5);
-  position: relative;
   text-align: left;
-  height: 493px;
-  overflow-y: scroll;
 }
 
-.icontent .iside h1 {
+.icontent .iside .iside_inner {
+  margin: 5% 20% 5% 5%;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.icontent .iside .iside_inner h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 2.5em;
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: -5%;
+  margin: -2% 0 -5% 0;
 }
 
-.icontent .iside h2 {
+.icontent .iside .iside_inner h1 span {
+  font-size: 0.8em;
+}
+
+.icontent .iside .iside_inner h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 1.5em;
@@ -678,9 +686,9 @@ body {
   color: rgba(51, 51, 51, 0.8);
 }
 
-.icontent .iside p {
+.icontent .iside .iside_inner p {
   font-family: 'Vollkorn', serif;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 /* ----------- SMARTPHONES ----------- */
