@@ -477,6 +477,7 @@ body {
             }
 
             input[type=text], input[type=email], textarea {
+                font-size: 0.9em;
                 font-family: 'Raleway', sans-serif;
                 width: 100%; /* Full width */
                 padding: 3%; /* Some padding */ 
@@ -793,6 +794,10 @@ and (max-width : 414px) {
                     font-weight: 500;
                     width: 75%;
                     margin: 0 auto;
+                }
+
+                input[type=text], input[type=email], textarea {
+                    font-size: 0.7em;
                 }
 
                 button {

@@ -573,6 +573,7 @@ body {
 }
 
 #scontact .right table input[type=text], #scontact .right table input[type=email], #scontact .right table textarea {
+  font-size: 0.9em;
   font-family: 'Raleway', sans-serif;
   width: 100%;
   /* Full width */
@@ -901,6 +902,9 @@ body {
     font-weight: 500;
     width: 75%;
     margin: 0 auto;
+  }
+  #scontact .right table input[type=text], #scontact .right table input[type=email], #scontact .right table textarea {
+    font-size: 0.7em;
   }
   #scontact .right table button {
     font-size: 0.55em;
