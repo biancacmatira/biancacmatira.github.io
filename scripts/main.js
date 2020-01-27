@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", function () {
     function success() {
         form.reset();
         button.style = "display: none ";
-        status.innerHTML = "Thanks!";
+        status.innerHTML = "Thank you! I'll get back to you soon.";
     }
 
     function error() {
