@@ -435,7 +435,7 @@ body {
         .socials {
             width: 60%;
             text-align: right;
-            margin: 10% 10% auto auto;
+            margin: 5% 10% auto auto;
 
             img {
                 width: 10%;
@@ -445,6 +445,24 @@ body {
 
             img:hover {
                 opacity: 80%;
+            }
+        }
+
+        .downloads {
+            text-align: right;
+            margin: 3% 10% auto auto;
+            
+            a {
+                text-decoration: none;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 0.7em;
+                background-color: $bg;
+                color: white;
+                padding: 2% 3%;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
             }
         }
     }
@@ -769,10 +787,10 @@ and (max-width : 414px) {
                 margin: 4% auto;
             }
 
-            .socials {
+            .socials, .downloads {
                 width: 60%;
                 text-align: center;
-                margin: 2% auto;
+                margin: 2% auto 5% auto;
             }
         }
 

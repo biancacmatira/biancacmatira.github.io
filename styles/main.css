@@ -528,7 +528,7 @@ body {
 #scontact .left .socials {
   width: 60%;
   text-align: right;
-  margin: 10% 10% auto auto;
+  margin: 5% 10% auto auto;
 }
 
 #scontact .left .socials img {
@@ -539,6 +539,24 @@ body {
 
 #scontact .left .socials img:hover {
   opacity: 80%;
+}
+
+#scontact .left .downloads {
+  text-align: right;
+  margin: 3% 10% auto auto;
+}
+
+#scontact .left .downloads a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 0.7em;
+  background-color: #709daa;
+  color: white;
+  padding: 2% 3%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 #scontact .right {
@@ -880,10 +898,10 @@ body {
     text-align: center;
     margin: 4% auto;
   }
-  #scontact .left .socials {
+  #scontact .left .socials, #scontact .left .downloads {
     width: 60%;
     text-align: center;
-    margin: 2% auto;
+    margin: 2% auto 5% auto;
   }
   #scontact .right {
     font-family: 'Raleway', sans-serif;
