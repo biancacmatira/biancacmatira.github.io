@@ -902,7 +902,7 @@ body {
     width: 75%;
     margin: 0 auto;
   }
-  #scontact .right table input[type=submit] {
+  #scontact .right table button {
     font-size: 0.55em;
   }
   #footer p {
