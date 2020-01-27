@@ -18,6 +18,24 @@ img.onload = function () {
     }
 };
 
+$(document).ready(function () {
+    $('#submit').click(function (event) {
+        event.preventDefault();
+        console.log('Clicked');
+
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+        var statusMsg = $('#status');
+        statusMsg.empty();
+
+        if (!(email.length > 5) && !(email.includes('@')) && !(email.includes('.'))) {
+            statusMsg.append('<p>Email is invalid.</p>');
+            event.preventDefault();
+        }
+    })
+})
+
 // window.onscroll = function () {
 //     if (pageOffset >= 300) {
 //         document.getElementById('back2top').style.visibility = "visible";
