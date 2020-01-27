@@ -20,7 +20,6 @@ img.onload = function () {
 
 $(document).ready(function () {
     $('#submit').click(function (event) {
-        event.preventDefault();
         console.log('Clicked');
 
         var name = $('#name').val();

@@ -588,19 +588,19 @@ body {
   resize: vertical;
 }
 
-#scontact .right table button[type=submit] {
+#scontact .right table button {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 0.8em;
   background-color: #709daa;
   color: white;
-  padding: 4% 7%;
+  padding: 3.5% 7%;
   border: none;
   border-radius: 7px;
   cursor: pointer;
 }
 
-#scontact .right table input[type=submit]:hover {
+#scontact .right table button:hover {
   background-color: #32728a;
 }
 
