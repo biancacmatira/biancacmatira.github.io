@@ -543,10 +543,12 @@ body {
 
 #scontact .left .downloads {
   text-align: right;
-  margin: 3% 10% auto auto;
+  margin: 5% 10% auto auto;
+  vertical-align: middle;
 }
 
 #scontact .left .downloads a {
+  margin: 5% auto;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -554,7 +556,6 @@ body {
   background-color: #709daa;
   color: white;
   padding: 2% 3%;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -902,6 +903,15 @@ body {
     width: 60%;
     text-align: center;
     margin: 2% auto 5% auto;
+  }
+  #scontact .left .downloads {
+    width: 60%;
+    text-align: center;
+    margin: 2% auto 5% auto;
+  }
+  #scontact .left .downloads a {
+    display: block;
+    width: 65%;
   }
   #scontact .right {
     font-family: 'Raleway', sans-serif;

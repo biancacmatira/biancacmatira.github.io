@@ -450,9 +450,11 @@ body {
 
         .downloads {
             text-align: right;
-            margin: 3% 10% auto auto;
+            margin: 5% 10% auto auto;
+            vertical-align: middle;
             
             a {
+                margin: 5% auto;
                 text-decoration: none;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 500;
@@ -460,7 +462,6 @@ body {
                 background-color: $bg;
                 color: white;
                 padding: 2% 3%;
-                border: none;
                 border-radius: 4px;
                 cursor: pointer;
             }
@@ -791,6 +792,17 @@ and (max-width : 414px) {
                 width: 60%;
                 text-align: center;
                 margin: 2% auto 5% auto;
+            }
+
+            .downloads {
+                width: 60%;
+                text-align: center;
+                margin: 2% auto 5% auto;
+
+                a {
+                    display: block;
+                    width: 65%;
+                }
             }
         }
 
